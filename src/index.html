@@ -1,0 +1,43 @@
+<head>
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+</head>
+
+<body>
+<video id="my-video" class="video-js"  controls width="426" height="240"  data-setup="{}" crossorigin="anonymous">
+</video>
+
+
+
+
+<script>
+
+    const url = "https://files.vectorly.io/demo/high-quality-240p/jellyfish-240p.mp4";
+
+    const player = videojs('my-video', {sources: [{
+        src: url,
+        type: 'video/mp4'
+    }], width: 1280, height: 720});
+
+
+    videojs.registerPlugin('vectorlyPlugin', test.vectorlyPlugin);
+
+
+    const upscaler = player.vectorlyPlugin({});
+
+
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
