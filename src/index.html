@@ -23,7 +23,9 @@
     videojs.registerPlugin('vectorlyPlugin', test.vectorlyPlugin);
 
 
-    const upscaler = player.vectorlyPlugin({});
+    const upscaler = player.vectorlyPlugin({
+      token: (new URLSearchParams(window.location.search)).get("token") // Pass in token from upscaler.vectorly.io
+    });
 
 
 </script>

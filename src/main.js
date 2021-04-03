@@ -1,4 +1,4 @@
-import  vectorlyUpscaler from '@vectorly-io/ai-upscaler-plugin/dist/vectorly-videojs';
+import  vectorlyUpscaler from '@vectorly-io/ai-upscaler/videojs';
 
 
 export  default {

@@ -35,22 +35,12 @@ module.exports = {
     new CleanWebpackPlugin({
       cleanStaleWebpackAssets: false
     }),
-
-      new CopyWebpackPlugin(
-          {
-              patterns: [
-                  { from: 'node_modules/@vectorly-io/ai-upscaler-plugin/dist/', to: './' },
-              ]
-          }
-      ),
-
-
-      new HtmlWebpackPlugin({
-          template: 'src/index.html',
-          inject: 'head',
-          scriptLoading: 'blocking',
-          filename: process.env.HTML_FNAME || 'index.html',
-      }),
+    new HtmlWebpackPlugin({
+        template: 'src/index.html',
+        inject: 'head',
+        scriptLoading: 'blocking',
+        filename: process.env.HTML_FNAME || 'index.html',
+    }),
   ],
 
   node: {}
